@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="../hamburger/hamburgerJs.js"></script>
+    <link rel="stylesheet" href="../hamburger/hamburgerStyle.css">
+    <link rel="stylesheet" href="../common style/style.css">
+    <title>Préstamos para empresas</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="topnav">
+                <img src="../imageResources/Logo.svg" class="active">
+                <div id="hamburger_div">
+                    <div class="col">
+                        <a class="hamburger_options" onclick="location.href='../loans/enterpriseLoans.html'">Préstamos
+                            para empresas</a>
+                        <a class="hamburger_options" onclick="location.href='../support/serviceChannels.html'">Canales
+                            de servicio</a>
+                        <a class="hamburger_options"
+                            onclick="location.href='../promotions/promotions.html'">Promociones</a>
+                        <a class="hamburger_options" onclick="location.href='../support/contacts.html'">Contactos</a>
+                        <a class="hamburger_options" onclick="location.href='../profile/profile.html'">Perfil</a>
+                        <div class="row">
+                            <button class="pure-material-button-contained" id="log_in_and_support"
+                                onclick="location.href='../signIn/signIn.html'">INICIAR
+                                SESIÓN</button>
+                        </div>
+                        <div class="row">
+                            <button class="pure-material-button-contained" id="log_in_and_support"
+                                onclick="location.href='../support/clientSupport.html'">ATENCIÓN AL
+                                CLIENTE</button>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="expandHamburger()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
+        <div class="row">
+            <section id="homeFrontPageHeader">
+                <div class="row">
+                    <img class="fullImage" src="../imageResources/familyLoans.png">
+            </section>
+            <h4 class="blueText" id="homeHeader">Nuestros
+                préstamos familiares</h4>
+            <p class="normal_text">
+                Les presentamos la línea de préstamos familiares
+                que podrá adquirir si posee una cuenta activa.
+            </p>
+            <h3 class="stepsTitle" id="promotionsHeader">Condiciones</h3>
+            <p class="normal_text">
+                Especificaciones adicionales para líneas arriba de $100,000
+            </p>
+            <h2 class="stepsSubTitle" id="promotionSubtitle">Requisitos</h2>
+            <ul class="list-group" id="requirementList">
+                <li class="list-group-item">
+                    <p class="normal_text">Carta de solicitud del certificado de depósito especificando el monto
+                        requerido</p>
+                </li>
+                <li class="list-group-item">
+                    <p class="normal_text">Credencial vigente de la empresa</p>
+                </li>
+                <li class="list-group-item">
+                    <p class="normal_text">Copia de escritura de la sociedad</p>
+                </li>
+                <li class="list-group-item">
+                    <p class="normal_text">Número de registro de IVA de la empresa</p>
+                </li>
+                <li class="list-group-item">
+                    <p class="normal_text">NIT de la empresa</p>
+                </li>
+                <li class="list-group-item">
+                    <p class="normal_text">DUI y NIT vigente del representante legal</p>
+                </li>
+                <li class="list-group-item">
+                    <p class="normal_text">DUI y NIT vigente de los firmantes en cuenta</p>
+                </li>
+                <li class="list-group-item">
+                    <p class="normal_text">Recibo de agua, luz o teléfono</p>
+                </li>
+            </ul>
+
+            <button class="pure-material-button-contained" id="log_in_and_support"
+                onclick="location.href='../promotions/credentialsLoans.html'">SOLICITAR</button>
+            <footer class="generalFooter">
+                <div class="column">
+                    <img src="../imageResources/whiteLogo.svg" id="footerLogo">
+                    <p class="footerText">Sobre nosotros</p>
+                    <p class="footerText">Puntos de pago cercanos</p>
+                    <p class="footerText">Aplicaciones móviles</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

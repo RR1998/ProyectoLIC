@@ -1,0 +1,432 @@
+.pure-material-button-contained {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+  padding: 0 16px;
+  min-width: 64px;
+  height: 36px;
+  vertical-align: middle;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+  background-color: #536dfe;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  font-family: var(
+    --pure-material-font,
+    "Roboto",
+    "Segoe UI",
+    BlinkMacSystemFont,
+    system-ui,
+    -apple-system
+  );
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 36px;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.pure-material-button-contained::-moz-focus-inner {
+  border: none;
+}
+
+.pure-material-button-contained::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.pure-material-button-contained::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  padding: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity 1s, transform 0.5s;
+}
+
+.pure-material-button-contained:hover,
+.pure-material-button-contained:focus {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.pure-material-button-contained:hover::before {
+  opacity: 0.08;
+}
+
+.pure-material-button-contained:focus::before {
+  opacity: 0.24;
+}
+
+.pure-material-button-contained:hover:focus::before {
+  opacity: 0.3;
+}
+
+.pure-material-button-contained:active {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.pure-material-button-contained:active::after {
+  opacity: 0.32;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0s;
+}
+
+.pure-material-button-contained:disabled {
+  color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+  background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.12);
+  box-shadow: none;
+  cursor: initial;
+}
+
+.pure-material-button-contained:disabled::before {
+  opacity: 0;
+}
+
+.pure-material-button-contained:disabled::after {
+  opacity: 0;
+}
+
+#stepsContainer {
+  margin-top: 1%;
+}
+
+.links {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+  color: #536dfe;
+}
+
+.dialogText {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 14px;
+  margin-top: 2%;
+  display: flex;
+  text-align: center;
+  font-size: auto;
+  color: #4f4f4f;
+}
+
+.stepsTitle {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: auto;
+  line-height: 28px;
+  color: #151515;
+}
+
+.stepsSubTitle {
+  margin-top: 3%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: auto;
+  line-height: 21px;
+  color: #000000;
+}
+
+.stepsDialogs {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.stepImage {
+  margin-top: 1%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: auto;
+}
+
+#homeFrontPageBody #blueheader {
+  position: absolute;
+  width: 5%;
+  height: 58px;
+  left: 35px;
+  top: 377px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #536dfe;
+  padding-bottom: 10%;
+}
+
+.image_header {
+  background-image: url(../imageResources/homeHeader.jpg);
+  background-size: cover;
+}
+
+.semiCirlcleShape {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  height: 61px;
+  width: 5%;
+  top: 70%;
+  left: 0%;
+  background-color: rgba(83, 109, 254, 0.4);
+  border-radius: 0px 30.5px 30.5px 0px;
+}
+
+.whiteText#homeWellcome {
+  width: 163px;
+  height: 49px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #f2f2f2;
+}
+
+.fullImage {
+  position: relative;
+  width: 100%;
+  height: 60%;
+}
+
+.blueText#homeHeader {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #536dfe;
+}
+
+.normal_text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: auto;
+  line-height: 16px;
+  text-align: center;
+  color: #4f4f4f;
+}
+
+.pure-material-button-contained#new_account {
+  width: auto;
+  margin: auto;
+}
+
+.pure-material-button-contained#continue {
+  margin-top: 4%;
+  padding-left: 3%;
+  padding-right: 3%;
+  width: auto;
+  margin: auto;
+}
+
+#phoneAuthenticator {
+  text-align: center;
+}
+
+#messageSentDialog {
+  margin-top: 1%;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #4f4f4f;
+}
+
+.center-block {
+  display: block;
+  text-align: center;
+  margin-right: 45%;
+  margin-left: 45%;
+  width: 25%;
+  padding: 10px;
+}
+
+#serviceChannelsColumn {
+  margin-top: 2.5%;
+  margin-left: 45%;
+  margin-right: 45%;
+  margin-bottom: 2.5%;
+}
+
+#serviceChannelsRow {
+  background-color: #e8eaf6;
+}
+
+#selectIssueForm {
+  margin-top: 3%;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 45%;
+}
+
+.stepsSubTitle#contacts_header {
+  margin-top: 15%;
+  line-height: 14px;
+}
+
+#promotionCards {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.stepsTitle#promotionsHeader {
+  color: #536dfe;
+  margin-top: 1%;
+}
+
+#requirementList {
+  margin-top: 1%;
+}
+
+.generalFooter {
+  margin-top: 1%;
+  padding: 2%;
+  margin: auto;
+  background-color: #536dfe;
+}
+
+#footerLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footerText {
+  margin-top: 1%;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#email {
+  margin-top: 25%;
+}
+
+#promotionCards button {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.vl {
+  border-left: 1px solid #bdbdbd;
+  height: 100%;
+  position: absolute;
+  margin-left: -3px;
+  top: 0;
+}
+
+#cuotaHeader {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  color: #4f4f4f;
+  text-align: center;
+}
+
+div #cuotaDates {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #536dfe;
+}
+
+div #blueCardText {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+#homeWalletCard {
+  width: 49%;
+  padding-bottom: 5%;
+  margin-right: 0.5%;
+  padding-top: 5%;
+  padding-right: 10%;
+  padding-left: 10%;
+  background-color: #8c9eff;
+}
+
+div #homePaymentCard {
+  margin-left: 0.5%;
+  width: 49%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  padding-right: 10%;
+  padding-left: 10%;
+  background-color: #536dfe;
+}
+
+#familiarLoanCard {
+  width: 49%;
+  margin-right: 0.5%;
+}
+
+#pymeLoanCard {
+  margin-left: 0.5%;
+  width: 49%;
+}
+
+button.pure-material-button-contained#log_in_and_support {
+  margin-top: 1%;
+  margin-left: 2%;
+  width: auto;
+  margin-bottom: 1%;
+}
+
+#payLoanHeaders{
+  margin-top: 2%;
+}
