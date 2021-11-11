@@ -9,7 +9,6 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="../hamburger/hamburgerJs.js"></script>
-    <script type="text/javascript" src="../signUp/signUpNumberAuthentication.js"></script>
     <link rel="stylesheet" href="../hamburger/hamburgerStyle.css">
     <link rel="stylesheet" href="../common style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -54,6 +53,10 @@
             <img src="../imageResources/like.svg" class="stepImage">
             <h2 class="stepsSubTitle">Confirme que recibió el mensaje</h2>
             <p id="messageSentDialog" class="stepsDialogs"></p>
+            <script>
+                document.getElementById("messageSentDialog").innerHTML = "Le hemos enviado un mensaje al número " +
+                    localStorage.getItem("phoneNumber");
+            </script>
             <div class="row" id="phoneAuthenticator">
                 <div class="col-sm">
                     <div class="input-field col s4">

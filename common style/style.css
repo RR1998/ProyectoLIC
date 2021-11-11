@@ -137,6 +137,7 @@
   text-align: center;
   font-style: normal;
   font-weight: bold;
+  font-size: 24px;
   font-size: auto;
   line-height: 28px;
   color: #151515;
@@ -159,7 +160,6 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
-  display: flex;
   align-items: center;
 }
 

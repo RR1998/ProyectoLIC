@@ -11,6 +11,7 @@
     <script type="text/javascript" src="../hamburger/hamburgerJs.js"></script>
     <link rel="stylesheet" href="../hamburger/hamburgerStyle.css">
     <link rel="stylesheet" href="../common style/style.css">
+    <script type="text/javascript" src="../signUp/signUpStepThree.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>Email</title>
@@ -49,13 +50,13 @@
             </div>
         </header>
         <div class="row" id="stepsContainer">
-            <h3 class="stepsTitle">Paso 4</h3>
+            <h3 class="stepsTitle">Paso 3</h3>
             <img src="../imageResources/email.svg" class="stepImage">
             <h2 class="stepsSubTitle">Cree su cuenta</h2>
             <input id="mail" type="text" class="validate" maxlength="30">
             <label for="mail">Correo electrónico</label>
-            <input id="phone_number" type="password" class="validate" maxlength="8">
-            <label for="phone_number">Contraseña</label>
+            <input id="password" type="password" class="validate" maxlength="8">
+            <label for="password">Contraseña</label>
             <p class="dialogText">La contraseña debe tener al menos 8 caracteres, una mayúscula y al menos un símbolo
                 (@$.%)</p>
         </div>
@@ -74,7 +75,7 @@
 
             <div class="row">
                 <button class="pure-material-button-contained" id="continue"
-                    onclick="location.href='../signUp/signUpStepFour.html'">CONTINUAR</button>
+                    onclick="saveAccount()">CONTINUAR</button>
             </div>
         </div>
     </div>

@@ -9,6 +9,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="../hamburger/hamburgerJs.js"></script>
+    <script type="text/javascript" src="../signUp/signUpStepFive.js"></script>
     <link rel="stylesheet" href="../hamburger/hamburgerStyle.css">
     <link rel="stylesheet" href="../common style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -51,11 +52,12 @@
         <div class="row" id="stepsContainer">
             <h3 class="stepsTitle">Paso 5</h3>
             <h2 class="stepsSubTitle">Ingrese una fotografía de perfil</h2>
-            <img src="../imageResources/add_profile_photo.svg" class="stepImage">
-            <input id="nit" type="text" class="validate" maxlength="30">
-            <label for="nit">Nombre y apellido</label>
+            <input src="../imageResources/add_profile_photo.svg" id="profileImage" class="stepImage" type="file"
+                accept="image/png, image/jpeg">
+            <input id="name" type="text" class="validate" maxlength="30">
+            <label for="name">Nombre y apellido</label>
             <button class="pure-material-button-contained" id="continue"
-                onclick="location.href='../signUp/signUpStepTwo.html'">CONTINUAR</button>
+                onclick="getProfileImage()">CONTINUAR</button>
         </div>
     </div>
     </div>
