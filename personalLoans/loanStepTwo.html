@@ -9,8 +9,11 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="../hamburger/hamburgerJs.js"></script>
+    <script type="text/javascript" src="../personalLoans/loanStepTwo.js"></script>
     <link rel="stylesheet" href="../hamburger/hamburgerStyle.css">
     <link rel="stylesheet" href="../common style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>Prestamo personal</title>
 </head>
 
@@ -48,9 +51,8 @@
         </header>
         <h3 class="stepsTitle">Paso 1</h3>
         <h2 class="stepsSubTitle">¿Cuánto necesita?</h2>
-        <input id="payment" type="text" class="validate" maxlength="30">
-        <label for="payment">USD</label>
-
+        <input id="amount" type="text" class="validate" maxlength="30">
+        <label for="amount">USD</label>
         <h2 class="stepsSubTitle">¿Por cuánto tiempo desea pagarlo?</h2>
         <input id="time" type="text" class="validate" maxlength="30">
         <label for="time">Meses</label>
@@ -62,8 +64,7 @@
             <option value="entrepreneurship">Emprendimiento</option>
             <option value="shopping">Compras</option>
         </select>
-        <button class="pure-material-button-contained" id="continue"
-            onclick="location.href='../personalLoans/loanStepThree.html'">CONTINUAR</button>
+        <button class="pure-material-button-contained" id="continue" onclick="saveNewLoan()">CONTINUAR</button>
     </div>
 </body>
 

@@ -57,15 +57,13 @@
         <div class="card mb-3" id="cuotaCounter">
             <div class="row no-gutters">
                 <div class="col-md-6">
-                    <p class="card-text" id="cuotaHeader">Total a pagar:</p>
-                    <p class="card-text" id="cuotaHeader">Cuota del mes:</p>
+                    <p class="card-text" id="cuotaHeader">Total cancelado:</p>
+                    <p class="card-text" id="cuotaHeader">Próxima cuota:</p>
                 </div>
                 <div class="col-md-6">
-                    <p class="card-text" id="cuotaHeader">
-                        $0.00
+                    <p class="card-text" id="paymentAmount">
                     </p>
-                    <p class="card-text" id="cuotaHeader">
-                        02/25
+                    <p class="card-text" id="paymentDate">
                     </p>
                 </div>
             </div>
@@ -75,6 +73,10 @@
             <button class="pure-material-button-contained" id="continue"
                 onclick="location.href='../signIn/home.html'">LISTO</button>
         </div>
+        <script>
+            document.getElementById("paymentAmount").innerHTML = "$" + localStorage.getItem("cuotaValue");
+            document.getElementById("paymentDate").innerHTML = localStorage.getItem("cuotaDates");
+        </script>
     </div>
 </body>
 

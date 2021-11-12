@@ -46,14 +46,14 @@
                 </a>
             </div>
         </header>
-        <h3 class="stepsTitle">Bienvenido, Manuel Pérez</h3>
+        <h3 class="stepsTitle" id="nameHeader">Bienvenido, Manuel Pérez</h3>
         <div class="row">
             <div class="col" id="promotionCards">
                 <div class="card mb-3" id="cuotaCounter">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <p class="card-text" id="cuotaHeader">Cuota Actual</p>
-                            <p class="card-text" id="cuotaDates">$0.00</p>
+                            <p class="card-text" id="cuotaValue">$0.00</p>
                         </div>
                         <div class="col-md-4">
                             <div class="vl"></div>
@@ -68,7 +68,7 @@
                             <p class="card-text" id="cuotaHeader">
                                 Cuotas Pendientes
                             </p>
-                            <p class="card-text" id="cuotaDates">
+                            <p class="card-text" id="cuotaNeeded">
                                 11/11/2021
                             </p>
                         </div>
@@ -80,14 +80,15 @@
                             <p class="card-text" id="cuotaHeader">Pagar en</p>
                         </div>
                         <div class="col">
-                            <p class="card-text" id="cuotaHeader">
+                            <p class="card-text" id="cuotaDays">
                                 0 días
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="card mb-3" id="homeWalletCard" onclick="location.href='../loans/personalLoans.html'">
+                    <div class="card mb-3" id="homeWalletCard"
+                        onclick="location.href='../personalLoans/loanStepOne.html'">
                         <div class="row no-gutters">
                             <div class="col-md-4">
                                 <img src="../imageResources/ic_wallet.png" />
@@ -122,7 +123,8 @@
                             nuestros préstamos
                             familiares
                         </div>
-                        <button class="pure-material-button-contained" id="log_in_and_support" onclick="location.href='../loans/familyLoans.html'">VER MÁS</button>
+                        <button class="pure-material-button-contained" id="log_in_and_support"
+                            onclick="location.href='../loans/familyLoans.html'">VER MÁS</button>
                     </div>
                     <div class="colum">
                         <img class="card-img-top" src="../imageResources/familyLoans.png" alt="Card image cap">
@@ -135,7 +137,8 @@
                             nuestros préstamos
                             a PYMES
                         </div>
-                        <button class="pure-material-button-contained" id="log_in_and_support" onclick="location.href='../loans/enterpriseLoans.html'">VER MÁS</button>
+                        <button class="pure-material-button-contained" id="log_in_and_support"
+                            onclick="location.href='../loans/enterpriseLoans.html'">VER MÁS</button>
                     </div>
                     <div class="colum">
                         <img class="card-img-top" src="../imageResources/2021schedule.png" alt="Card image cap">
@@ -150,6 +153,17 @@
                     <p class="footerText">Aplicaciones móviles</p>
                 </div>
             </footer>
+            <script>
+                document.getElementById("nameHeader").innerHTML = "Bienvenido, " + localStorage.getItem("name");
+                if (localStorage.getItem("cuotaValue") == "null") {
+                    document.getElementById("cuotaValue").innerHTML = "0.00"
+                } else {
+                    document.getElementById("cuotaValue").innerHTML = localStorage.getItem("cuotaValue")
+                }
+                document.getElementById("cuotaDates").innerHTML = localStorage.getItem("cuotaDates");
+                document.getElementById("cuotaNeeded").innerHTML = localStorage.getItem("cuotaNeeded");
+                document.getElementById("cuotaDays").innerHTML = localStorage.getItem("cuotaDays")
+            </script>
         </div>
 </body>
 

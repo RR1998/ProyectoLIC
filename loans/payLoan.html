@@ -9,6 +9,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="../hamburger/hamburgerJs.js"></script>
+    <script type="text/javascript" src="../loans/payLoan.js"></script>
     <link rel="stylesheet" href="../hamburger/hamburgerStyle.css">
     <link rel="stylesheet" href="../common style/style.css">
     <title>Pago de prestamos</title>
@@ -58,18 +59,27 @@
                     <p class="card-text" id="cuotaHeader">Cuota del mes:</p>
                 </div>
                 <div class="col-md-6">
-                    <p class="card-text" id="cuotaHeader">
-                        $0.00
+                    <p class="card-text" id="paymentAmount">
+                        -
                     </p>
-                    <p class="card-text" id="cuotaHeader">
-                        02/25
+                    <p class="card-text" id="paymentDate">
+                        -
                     </p>
                 </div>
             </div>
         </div>
         <button class="pure-material-button-contained" id="log_in_and_support"
-            onclick="location.href='../loans/paymentDone.html'">PAGAR</button>
+            onclick="refreshPaymentDate()">PAGAR</button>
         <button class="pure-material-button-contained" id="log_in_and_support"
             onclick="location.href='../support/contacts.html'">CÓDIGO QR</button>
+        <script>
+            document.getElementById("payLoanHeaders").innerHTML = "Bienvenido, " + localStorage.getItem("name");
+            if (localStorage.getItem("paymentAmount") == "null") {
+                document.getElementById("paymentAmount").innerHTML = "$0.00"
+            } else {
+                document.getElementById("paymentAmount").innerHTML = "$" + localStorage.getItem("cuotaValue")
+            }
+            document.getElementById("paymentDate").innerHTML = localStorage.getItem("cuotaDates");
+        </script>
     </div>
 </body>

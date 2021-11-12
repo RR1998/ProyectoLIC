@@ -46,7 +46,7 @@
                 </a>
             </div>
         </header>
-        <h3 class="stepsTitle">Bienvenido, Manuel Pérez</h3>
+        <h3 class="stepsTitle" id="nameHeader">Bienvenido, Manuel Pérez</h3>
         <p class="normal_text" id="payLoanHeaders">
             Para solicitar su préstamo, sólo necesita llenar
             un formulario en pocos minutos.
@@ -61,11 +61,11 @@
                     <p class="card-text" id="cuotaHeader">Tiempo máximo de préstamo:</p>
                 </div>
                 <div class="col-md-6">
-                    <p class="card-text" id="cuotaHeader">
+                    <p class="card-text" id="cuotaHeader" name="maxAmount">
                         $0.00
                     </p>
-                    <p class="card-text" id="cuotaHeader">
-                        02/25
+                    <p class="card-text" id="cuotaHeader" name="maxTime">
+                        12 Meses
                     </p>
                 </div>
             </div>
@@ -74,6 +74,10 @@
         <button class="pure-material-button-contained" id="continue"
         onclick="location.href='../personalLoans/loanStepTwo.html'">CONTINUAR</button>
     </div>
+    <script>
+        document.getElementById("nameHeader").innerHTML = "Bienvenido, " + localStorage.getItem("name");
+        document.getElementsByName("maxAmount").innerHTML = "$" + localStorage.getItem("maxAmount");
+    </script>
 </body>
 
 </html>

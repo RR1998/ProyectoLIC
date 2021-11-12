@@ -252,7 +252,8 @@
   padding-left: 3%;
   padding-right: 3%;
   width: auto;
-  margin: auto;
+  margin-left: 43%;
+  margin-right: 43%;
 }
 
 #phoneAuthenticator {
@@ -370,7 +371,57 @@
   text-align: center;
 }
 
+#cuotaDays {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  color: #4f4f4f;
+  text-align: center;
+}
+
+#paymentAmount {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  color: #4f4f4f;
+  text-align: center;
+}
+
+#paymentDate {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  color: #4f4f4f;
+  text-align: center;
+}
+
 div #cuotaDates {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #536dfe;
+}
+
+div #cuotaValue {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #536dfe;
+}
+
+div #cuotaNeeded {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -427,6 +478,6 @@ button.pure-material-button-contained#log_in_and_support {
   margin-bottom: 1%;
 }
 
-#payLoanHeaders{
+#payLoanHeaders {
   margin-top: 2%;
 }
