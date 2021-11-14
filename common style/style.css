@@ -172,6 +172,11 @@
   height: auto;
 }
 
+#qrPaymentIcon{
+  height: 25%;
+  width: 25%;
+}
+
 #homeFrontPageBody #blueheader {
   position: absolute;
   width: 5%;

@@ -6,7 +6,7 @@ function saveAccount() {
     document.getElementById("mail").value
   );
   localStorage.setItem(
-    "signUpEmail",
+    "password",
     document.getElementById("password").value
   );
   window.document.location = "../signUp/signUpStepFour.html";
