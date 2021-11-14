@@ -61,8 +61,7 @@
                     <p class="card-text" id="cuotaHeader">Tiempo máximo de préstamo:</p>
                 </div>
                 <div class="col-md-6">
-                    <p class="card-text" id="cuotaHeader" name="maxAmount">
-                        $0.00
+                    <p class="card-text" id="maxAmount">
                     </p>
                     <p class="card-text" id="cuotaHeader" name="maxTime">
                         12 Meses
@@ -76,7 +75,7 @@
     </div>
     <script>
         document.getElementById("nameHeader").innerHTML = "Bienvenido, " + localStorage.getItem("name");
-        document.getElementsByName("maxAmount").innerHTML = "$" + localStorage.getItem("maxAmount");
+        document.getElementById("maxAmount").innerHTML = "$" + localStorage.getItem("maxAmount");
     </script>
 </body>
 

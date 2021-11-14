@@ -5,5 +5,9 @@ function saveDocuments() {
   localStorage.setItem("nit", document.getElementById("nit").value);
   localStorage.setItem("dui", document.getElementById("dui").value);
   localStorage.setItem("income", document.getElementById("income").value);
-  window.document.location = "../signUp/signUpStepFive.html"
+  localStorage.setItem(
+    "maxAmount",
+    (parseFloat(document.getElementById("income").value) * 0.8).toString()
+  );
+  window.document.location = "../signUp/signUpStepFive.html";
 }

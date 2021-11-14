@@ -61,10 +61,10 @@
                     <p class="card-text" id="cuotaHeader">Cuota del mes:</p>
                 </div>
                 <div class="col-md-6">
-                    <p class="card-text" id="cuotaHeader">
+                    <p class="card-text" id="paymentAmount">
                         $0.00
                     </p>
-                    <p class="card-text" id="cuotaHeader">
+                    <p class="card-text" id="paymentDate">
                         02/25
                     </p>
                 </div>
@@ -75,4 +75,13 @@
         <button class="pure-material-button-contained" id="log_in_and_support"
             onclick="location.href='../qrPayment/qrPaymentLinkFour.html'">CÓDIGO QR</button>
     </div>
+    <script>
+        document.getElementById("payLoanHeaders").innerHTML = "Bienvenido, " + localStorage.getItem("name");
+        if (localStorage.getItem("paymentAmount") == "null") {
+            document.getElementById("paymentAmount").innerHTML = "$0.00"
+        } else {
+            document.getElementById("paymentAmount").innerHTML = "$" + localStorage.getItem("cuotaValue")
+        }
+        document.getElementById("paymentDate").innerHTML = localStorage.getItem("cuotaDates");
+    </script>
 </body>
